@@ -1,12 +1,21 @@
 package com.SBS.GamingClub.Entitis;
+import jakarta.persistence.*;
+@Entity
+@Table(name="games")
+
+
 
 public class Game {
+	
+	@Id 
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 private int id;
 private String name;
 private String description;
 private float amount;
 
 public Game() {}
+
 public Game(String name, String description, float amount, String status) {
 	super();
 	this.name = name;
