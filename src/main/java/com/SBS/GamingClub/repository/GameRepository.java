@@ -1,10 +1,5 @@
 package com.SBS.GamingClub.repository;
 
-public interface GameRepository {
-
-}
-package com.SBS.GamingClub.repository;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import com.SBS.GamingClub.Entitis.Game;
@@ -12,8 +7,6 @@ import java.util.List;
 
 @Repository
 public interface GameRepository extends JpaRepository<Game, Integer> {
-    // Basic CRUD operations are inherited from JpaRepository
-    
     // Find game by name
     Game findByName(String name);
     
