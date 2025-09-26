@@ -1,40 +1,52 @@
-// src/main/java/com/SBS/GamingClub/dto/RechargeDto.java
-
 package com.SBS.GamingClub.dto;
 
-import java.time.LocalDateTime;
-
-public class RechargeDto {
-    // CHANGE private Long memberId; TO private int memberId;
-    private int memberId; // CORRECTED: Should be int to match Member entity ID
-    private float amount;
-    private LocalDateTime dateTime;
+public class MemberDto {
+    private String name;
+    private String phone;
+    private float fees;
+    private float balance;
 
     // Default constructor
-    public RechargeDto() {}
+    public MemberDto() {}
 
     // Constructor with fields
-    public RechargeDto(int memberId, float amount, LocalDateTime dateTime) {
-        this.memberId = memberId;
-        this.amount = amount;
-        this.dateTime = dateTime;
-    }
-
-    // Constructor without dateTime (for new recharges)
-    public RechargeDto(int memberId, float amount) {
-        this.memberId = memberId;
-        this.amount = amount;
-        this.dateTime = LocalDateTime.now();
+    public MemberDto(String name, String phone, float fees, float balance) {
+        this.name = name;
+        this.phone = phone;
+        this.fees = fees;
+        this.balance = balance;
     }
 
     // Getters and Setters
-    public int getMemberId() {
-        return memberId;
+    public String getName() {
+        return name;
     }
 
-    public void setMemberId(int memberId) {
-        this.memberId = memberId;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    // ... rest of the file
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public float getFees() {
+        return fees;
+    }
+
+    public void setFees(float fees) {
+        this.fees = fees;
+    }
+
+    public float getBalance() {
+        return balance;
+    }
+
+    public void setBalance(float balance) {
+        this.balance = balance;
+    }
 }
