@@ -1,0 +1,29 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: var(--bg-light);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--neon-pink);
+}
+
+/* Links */
+.navbar-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue);
+}

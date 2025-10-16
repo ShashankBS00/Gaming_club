@@ -1,0 +1,19 @@
+:root {
+  --bg-dark: #0a0a0f;
+  --bg-light: #1a1a24;
+  --neon-pink: #ff007f;
+  --neon-purple: #7a00ff;
+  --neon-blue: #00eaff;
+  --text-light: #ffffff;
+  --text-grey: #b3b3b3;
+  --font-main: 'Orbitron', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: var(--font-main);
+}
+
