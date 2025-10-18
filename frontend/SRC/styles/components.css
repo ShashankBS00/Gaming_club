@@ -1,0 +1,32 @@
+.event-card {
+  background: var(--bg-light);
+  border: 1px solid var(--neon-purple);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.event-card:hover {
+  box-shadow: 0 0 10px var(--neon-purple);
+  transform: translateY(-5px);
+}
+
+.event-card h3 {
+  color: var(--neon-blue);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.event-card p {
+  color: var(--text-grey);
+  margin-bottom: 10px;
+}
+
+.event-status {
+  background: var(--neon-pink);
+  color: var(--bg-dark);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
